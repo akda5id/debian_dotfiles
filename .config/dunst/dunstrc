@@ -1,8 +1,3 @@
-#
-#> Daniel Wayne Armstrong
-#> https://github.com/vonbrownie/dotfiles
-#> https://www.dwarmstrong.org
-#
 [global]
     font = Liberation Mono 10
     
@@ -157,7 +152,6 @@
     color = "#bf616a"
 
 [shortcuts]
-
     # Shortcuts are specified as [modifier+][modifier+]...key
     # Available modifiers are "ctrl", "mod1" (the alt-key), "mod2",
     # "mod3" and "mod4" (windows-key).

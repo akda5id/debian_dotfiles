@@ -3,6 +3,7 @@
 ! Refresh config by running `xrdb -merge ~/.Xresources`.
 
 ! == Colours ==
+
 ! Inspired by Nord Termite
 ! https://github.com/arcticicestudio/nord-termite
 *.foreground:   #d8dee9
@@ -42,6 +43,7 @@
 *.color15:      #eceff4
 
 ! == Urxvt ==
+
 URxvt.scrollBar:    false
 URxvt.saveLines:    10000
 ! Test out fonts in a live terminal before committing to the config by
@@ -65,4 +67,5 @@ URxvt.url-select.underline: true
 URxvt.keysym.M-Escape:  perl:keyboard-select:activate
 
 ! == Rofi ==
+
 ! Config now in ~/.config/rofi

@@ -1,9 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!--
-> Daniel Wayne Armstrong
-> https://github.com/vonbrownie/dotfiles
-> https://www.dwarmstrong.org
--->
 <openbox_config xmlns="http://openbox.org/3.4/rc" xmlns:xi="http://www.w3.org/2001/XInclude">
   <resistance>
     <strength>10</strength>

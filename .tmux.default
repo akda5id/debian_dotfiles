@@ -1,6 +1,5 @@
-#NAME=".tmux.default"
-#BLURB="Generate a 'default' tmux environment"
-#SOURCE="https://github.com/vonbrownie/dotfiles/blob/master/.tmux.default"
+#
+# Generate a default tmux environment
 
 # Import config settings
 source-file ~/.tmux.conf
