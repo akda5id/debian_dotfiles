@@ -785,11 +785,7 @@
       <maximized>false</maximized>
       <decor>yes</decor>
     </application>
-    <!-- Virtualbox -->
-    <application class="VirtualBox">
-      <maximized>false</maximized>
-      <decor>yes</decor>
-    </application>
+    <!-- Virtualbox (unable to get this app to obey rules) -->
     <!-- Viewnior -->
     <application name="viewnior">
       <maximized>false</maximized>
