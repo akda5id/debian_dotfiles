@@ -296,7 +296,7 @@
         <menu>root-menu</menu>
       </action>
     </keybind>
-    <!-- Keybindings for [l]ock screen, [s]uspend, [h]ibernate, [e]xit -->
+    <!-- Keybindings for [l]ock screen, [s]uspend, [e]xit -->
     <keybind key="W-l">
       <action name="Execute">
         <command>i3lock -c 000000 -i ~/.i3lock.png</command>
@@ -307,11 +307,6 @@
         <command>sh -c 'i3lock -c 000000 -i ~/.i3lock.png; sync; systemctl suspend'</command>
       </action>
     </keybind>
-    <!-- <keybind key="W-h">
-      <action name="Execute">
-        <command>systemctl hibernate</command>
-      </action>
-  </keybind> -->
     <keybind key="W-e">
       <action name="Exit">
         <prompt>no</prompt>

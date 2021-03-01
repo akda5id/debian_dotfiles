@@ -46,7 +46,7 @@ mtg() { for f in "$@" ; do mv -- "$f" "${f//[^a-zA-Z0-9\.\-]/_}" ; done ; }
 
 # == Aliases ==
 
-alias aaa="sudo apt update && apt list --upgradable && sudo apt full-upgrade && sudo apt autoremove"
+alias aaa="sudo apt update && apt list --upgradable && sudo apt full-upgrade && sudo apt autoclean && sudo apt autoremove"
 alias arst="setxkbmap us"
 alias asdf="setxkbmap us -variant colemak"
 alias bye="sudo systemctl poweroff"
