@@ -8,4 +8,4 @@ Configuration files in my **$HOME**.
 
 #### LICENSE
 
-GPLv3. See [LICENSE](https://gitlab.com/dwarmstrong.org/dotfiles/blob/master/LICENSE.md) for more details.
+GPLv3. See [LICENSE](https://gitlab.com/dwarmstrong/dotfiles/-/blob/master/LICENSE.md) for more details.
