@@ -4,8 +4,8 @@ Configuration files in my **$HOME**.
 
 #### AUTHOR
 
-[Daniel Wayne Armstrong](https://www.circuidipity.com)
+[Daniel Wayne Armstrong](https://www.dwarmstrong.org)
 
 #### LICENSE
 
-GPLv2. See [LICENSE](https://github.com/vonbrownie/dotfiles/blob/master/LICENSE) for more details.
+GPLv3. See [LICENSE](https://gitlab.com/dwarmstrong.org/dotfiles/blob/master/LICENSE.md) for more details.
