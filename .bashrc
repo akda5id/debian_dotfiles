@@ -7,7 +7,9 @@ esac
 
 # == Greeting ==
 
-${HOME}/.local/bin/fortune ${HOME}/.fortunes
+if [[ -x "${HOME}/.local/bin/fortune" ]]; then
+    ${HOME}/.local/bin/fortune ${HOME}/.fortunes
+fi
 
 # == Prompt ==
 
