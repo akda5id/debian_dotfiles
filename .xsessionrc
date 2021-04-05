@@ -1,6 +1,3 @@
-# ~/.xsessionrc
 #
-# Source: https://github.com/vonbrownie/dotfiles/blob/master/.xsessionrc
-
-# source the contents of `$HOME/.profile` when using **Lightdm** as display manager
+# source when using Lightdm display manager
 . $HOME/.profile
