@@ -1,0 +1,26 @@
+/*
+#applicationmenu-button { background-color: #d08770; }
+*/
+
+#xfce-panel-toggle-button:checked, .tasklist button:checked {
+    color: black;
+    background-color: #a3be8c;
+    font-weight: bold;
+}
+
+#xfce-panel-toggle-button { color: white; }
+
+/*
+#pulseaudio-button, #xfce4-power-manager-plugin, 
+#xfce4-notification-plugin, #sn-button { background-color: #4c566a; }
+*/
+
+#clock-button, #actions-button {
+    color: white;
+    font-weight: bold;
+    padding: 5px;
+}
+
+#clock-button { background-color: #5e81ac; }
+
+#actions-button { background-color: #bf616a; }
