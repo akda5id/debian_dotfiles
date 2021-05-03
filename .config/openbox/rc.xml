@@ -297,17 +297,17 @@
       </action>
     </keybind>
     <!-- Keybindings for [l]ock screen, [s]uspend, [e]xit -->
-    <keybind key="W-l">
+    <keybind key="S-W-l">
       <action name="Execute">
         <command>i3lock -c 000000 -i ~/.i3lock.png</command>
       </action>
     </keybind>
-    <keybind key="W-s">
+    <keybind key="S-W-s">
       <action name="Execute">
         <command>sh -c 'i3lock -c 000000 -i ~/.i3lock.png; sync; systemctl suspend'</command>
       </action>
     </keybind>
-    <keybind key="W-e">
+    <keybind key="S-W-e">
       <action name="Exit">
         <prompt>no</prompt>
       </action>
