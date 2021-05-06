@@ -1,1 +1,3 @@
 .tasklist { -XfceTasklist-max-button-length: 1000; }
+#clock-button { font-weight: bold; }
+#actions-button { font-weight: bold; }

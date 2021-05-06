@@ -7,16 +7,17 @@ if [ -n "$BASH_VERSION" ]; then
     fi
 fi
 
-# Set PATH so it includes user's private bin if it exists.
+# Set PATH so it includes user's private bins if they exist.
 if [ -d "$HOME/bin" ] ; then
-    PATH="$HOME/bin:$HOME/.local/bin:$PATH"
+    PATH="$HOME/bin:$PATH"
+fi
+if [ -d "$HOME/.local/bin" ] ; then
+    PATH="$HOME/.local/bin:$PATH"
 fi
 
 # Styling QT apps with chosen GTK themes:
-#
-# Adwaita themes - install 'adwaita-qt' package, then ...
-#export QT_STYLE_OVERRIDE=Adwaita
-#export QT_STYLE_OVERRIDE=Adwaita-Dark
-#
-# Non-adwaita themes - install 'qt5-style-plugins' package, then ...
+# * Adwaita themes - install 'adwaita-qt' package, then ...
+#	export QT_STYLE_OVERRIDE=Adwaita
+#	export QT_STYLE_OVERRIDE=Adwaita-Dark
+# * Non-adwaita themes - install 'qt5-style-plugins' package, then ...
 export QT_QPA_PLATFORMTHEME=gtk2
