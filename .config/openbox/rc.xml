@@ -197,7 +197,7 @@
         <to>4</to>
       </action>
     </keybind>
-    <keybind key="W-d">
+    <keybind key="S-W-d">
       <action name="ToggleShowDesktop"/>
     </keybind>
     <!-- Keybindings for windows -->
@@ -225,17 +225,17 @@
         <wrap>no</wrap>
       </action>
     </keybind>
-    <keybind key="S-W-Up">
+    <keybind key="W-Up">
       <action name="MoveResizeTo">
         <monitor>1</monitor>
       </action>
     </keybind>
-    <keybind key="S-W-Down">
+    <keybind key="W-Down">
       <action name="MoveResizeTo">
         <monitor>2</monitor>
       </action>
     </keybind>
-    <keybind key="S-W-Left">
+    <keybind key="W-Left">
       <action name="UnmaximizeFull"/>
       <action name="MoveResizeTo">
         <x>0</x>
@@ -244,7 +244,7 @@
         <height>100%</height>
       </action>
     </keybind>
-    <keybind key="S-W-Right">
+    <keybind key="W-Right">
       <action name="UnmaximizeFull"/>
       <action name="MoveResizeTo">
         <x>1/2</x>
@@ -253,16 +253,16 @@
         <height>100%</height>
       </action>
     </keybind>
-    <keybind key="S-W-m">
+    <keybind key="W-m">
       <action name="ToggleMaximize"/>
     </keybind>
-    <keybind key="S-W-d">
+    <keybind key="W-d">
       <action name="ToggleDecorations"/>
     </keybind>
-    <keybind key="S-W-i">
+    <keybind key="W-i">
       <action name="Iconify"/>
     </keybind>
-    <keybind key="S-W-c">
+    <keybind key="W-c">
       <action name="Close"/>
     </keybind>
     <!-- Keybindings for window switching -->

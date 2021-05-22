@@ -21,7 +21,7 @@ dunst -config ~/.config/dunst/dunstrc &
 tint2 &
 
 # clipboard
-diodon &
+#diodon &
 
 # volume control
 (sleep 2; volumeicon) &
@@ -30,4 +30,4 @@ diodon &
 nm-applet &
 
 # launch terminal
-urxvt &
+xfce4-terminal &
