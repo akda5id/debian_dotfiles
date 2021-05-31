@@ -197,7 +197,7 @@
         <to>4</to>
       </action>
     </keybind>
-    <keybind key="S-W-d">
+        <keybind key="S-W-d">
       <action name="ToggleShowDesktop"/>
     </keybind>
     <!-- Keybindings for windows -->
@@ -225,12 +225,12 @@
         <wrap>no</wrap>
       </action>
     </keybind>
-    <keybind key="W-Up">
+    <keybind key="S-W-Up">
       <action name="MoveResizeTo">
         <monitor>1</monitor>
       </action>
     </keybind>
-    <keybind key="W-Down">
+    <keybind key="S-W-Down">
       <action name="MoveResizeTo">
         <monitor>2</monitor>
       </action>
