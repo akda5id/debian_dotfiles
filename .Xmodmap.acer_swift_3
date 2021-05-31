@@ -1,5 +1,0 @@
-! acer swift 3 key mappings
-
-! modify capsLk into repeating backspace
-keycode 66 = BackSpace
-clear Lock
