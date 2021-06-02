@@ -46,12 +46,19 @@ md() { mkdir -p -- "$@" && cd -- "$@" || return ; }
 # Replace spaces and non-ascii characters in a filename with underscore
 mtg() { for f in "$@" ; do mv -- "$f" "${f//[^a-zA-Z0-9\.\-]/_}" ; done ; }
 
+# (Un)mount usb devices
+mu() { sudo mountusb -m $1 ; }
+umu() { sudo mountusb -u $1 ; }
+# LUKS-encrypted usb device
+muc() { sudo cryptset -o $1 && sudo mountusb -m $1 ; }
+umuc() { sudo mountusb -u $1 && sudo cryptset -c $1 ; }
+
 # == Aliases ==
 
 alias aaa="sudo apt update && apt list --upgradable && sudo apt upgrade && sudo apt-get autoclean && sudo apt autoremove"
 alias arst="setxkbmap us"
 alias asdf="setxkbmap us -variant colemak"
-alias backupHomeToUsb="backupHomeTo usb"
+alias backupHomeToUsb="backupHomeTo sdb1"
 alias bye="sudo systemctl poweroff"
 alias dff="df -hT --total"
 alias dpkgg="dpkg -l | grep -i"
