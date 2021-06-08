@@ -27,7 +27,7 @@ RESET="\\[\\e[0m\\]"
 if [[ -n "$SSH_CLIENT" ]]; then
     ssh_message="-ssh_session"
 fi
-PS1="${GREEN}\\u ${WHITE}at ${YELLOW}\h${RED}${ssh_message} ${WHITE}in ${BLUE}\\w \\n$WHITE\$${RESET} "
+PS1="${MAGENTA}\t ${WHITE}and ${GREEN}\\u ${WHITE}at ${YELLOW}\h${RED}${ssh_message} ${WHITE}in ${BLUE}\\w \\n$WHITE\$${RESET} "
 
 # == Functions ==
 
