@@ -17,7 +17,7 @@ fi
 
 # bind commands to certain keys or key combos
 if [ -f $userbindkeys ]; then
-	xbindkeys
+	xbindkeys -p
 fi
 
 # key mappings
