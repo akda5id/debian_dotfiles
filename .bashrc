@@ -58,7 +58,6 @@ umuc() { sudo mountusb -u $1 && sudo cryptset -c $1 ; }
 alias aaa="sudo apt update && apt list --upgradable && sudo apt upgrade && sudo apt-get autoclean && sudo apt autoremove"
 alias arst="setxkbmap us"
 alias asdf="setxkbmap us -variant colemak"
-alias backupHomeToUsb="backupHomeTo sdb1"
 alias bye="sudo systemctl poweroff"
 alias dff="df -hT --total"
 alias dpkgg="dpkg -l | grep -i"
