@@ -296,6 +296,16 @@
         <menu>root-menu</menu>
       </action>
     </keybind>
+    <!-- <keybind key="Print">
+      <action name="Execute">
+        <command>flameshot gui</command>
+      </action>
+    </keybind> -->
+    <keybind key="W-x">
+      <action name="Execute">
+        <command>xkill</command>
+      </action>
+    </keybind>
     <!-- Keybindings for [l]ock screen, [s]uspend, [e]xit -->
     <keybind key="S-W-l">
       <action name="Execute">

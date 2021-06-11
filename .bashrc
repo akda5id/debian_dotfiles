@@ -38,7 +38,7 @@ bak() { for f in "$@" ; do cp -- "$f" "$f.$(date +%FT%H%M%S).bak" ; done ; }
 c() { cd -- "$@" && ls -aFlhNv --color=always ; }
 
 # Top 10 most used commands
-mostUsedCommands() { history | awk '{print $3}' | sort | uniq -c | sort -rn | head ; }
+cmd10() { history | awk '{print $3}' | sort | uniq -c | sort -rn | head ; }
 
 # Make directory and change to it immediately
 md() { mkdir -p -- "$@" && cd -- "$@" || return ; }
@@ -66,8 +66,10 @@ alias gpush="git push -u origin master"
 alias gsave="git commit -m 'save'"
 alias gs="git status"
 alias l="ls -aFlhNv --color=always"
+alias lsmount="mount | column -t"
 alias myip="ip -f inet address | grep inet | grep -v 'lo$' | cut -d ' ' -f 6,13 && curl ifconfig.me && echo ' external ip'"
 alias p="less"
+alias psg='ps aux | grep'
 alias reboot="sudo systemctl reboot"
 alias t="c ~/tmp"
 alias tmuxd="tmux -f ~/.tmux.default attach"

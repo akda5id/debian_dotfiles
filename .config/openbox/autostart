@@ -22,9 +22,7 @@ tint2 &
 
 # clipboard
 #diodon &
-
-# screenshots
-flameshot &
+parcellite &
 
 # volume control
 (sleep 2; volumeicon) &
