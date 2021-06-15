@@ -1,7 +1,6 @@
 " == General configuration ==
 
 set nocompatible            " disable compatibility to old-time vi
-set background=dark         " adjust default colours for better contrast
 set showmatch               " show matching brackets.
 set ignorecase              " case insensitive matching
 set mouse=v                 " middle-click paste with mouse
@@ -21,7 +20,8 @@ set softtabstop=4           " see multiple spaces as tabstops so <BS> does the r
 " == Colors ==
 
 " built-in schemes installed in `/usr/share/nvim/runtime/colors`; extra schemes in `~/.config/nvim/colors`
-colorscheme default     " `default` picks up colors defined in `~/.Xresources`
+"colorscheme default     " `default` picks up colors defined in `~/.Xresources`
+colorscheme nord
 
 " == Mode mappings ==
 
@@ -41,9 +41,13 @@ inoremap <leader>d <C-R>=strftime("%Y-%m-%dT%H:%M")<CR>
 
 " == Plugins ==
 
-" managed by [vim-plug](https://github.com/junegunn/vim-plug)
-call plug#begin('~/.local/share/nvim/plugged')
+" specify directory for plugins
+call plug#begin('~/.config/nvim/plugged')
+
+Plug 'arcticicestudio/nord-vim'
 Plug 'vimwiki/vimwiki'
+
+" initialize plugin system
 call plug#end()
 
 " == Extras ==
