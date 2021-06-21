@@ -1,4 +1,5 @@
-# background
+# set background color (`hsetroot` plays nice with picom) and image
+hsetroot -solid "#000000"
 feh --bg-scale ~/image/backgrounds/current.jpg &
 
 # detect if secondary display attached and make it primary
