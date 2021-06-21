@@ -1,15 +1,11 @@
-#
-# run these things when openbox starts
-
-# set background color (`hsetroot` plays nice with picom) and image
-hsetroot -solid "#000000"
-(sleep 1; /bin/sh ~/.fehbg) &
+# background
+feh --bg-scale ~/image/backgrounds/current.jpg &
 
 # detect if secondary display attached and make it primary
 ~/bin/dldsply -r &
 
-# compositor - background process + disable shadowing effects during session
-#picom -CGb &
+# compositor
+picom &
 
 # power management
 xfce4-power-manager &
@@ -21,7 +17,6 @@ dunst -config ~/.config/dunst/dunstrc &
 tint2 &
 
 # clipboard
-#diodon &
 parcellite &
 
 # volume control
