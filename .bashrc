@@ -55,7 +55,7 @@ umuc() { sudo mountusb -u $1 && sudo cryptset -c $1 ; }
 
 # == Aliases ==
 
-alias aaa="sudo apt update && apt list --upgradable && sudo apt upgrade && sudo apt-get autoclean && sudo apt autoremove"
+alias aaa="sudo apt update && apt list --upgradable && sudo apt full-upgrade && sudo apt-get autoclean && sudo apt autoremove"
 alias arst="setxkbmap us"
 alias asdf="setxkbmap us -variant colemak"
 alias bye="sudo systemctl poweroff"
