@@ -1,5 +1,4 @@
-#
-# if not running interactively, don't do anything
+# ~/.bashrc - If not running interactively, don't do anything
 case $- in
     *i*) ;;
       *) return;;
@@ -34,7 +33,7 @@ PS1="${GREEN}\\u ${WHITE}at ${YELLOW}\h${RED}${ssh_message} ${WHITE}in ${BLUE}\\
 # Backup and timestamp files
 bak() { for f in "$@" ; do cp -- "$f" "$f.$(date +%FT%H%M%S).bak" ; done ; }
 
-# change directories and list contents
+# Change directories and list contents
 c() { cd -- "$@" && ls -aFlhNv --color=always ; }
 
 # Top 10 most used commands
@@ -129,12 +128,14 @@ alias starthistory="set -o history"
 
 # == Misc ==
 
+# PROMPT_COMMAND sets the terminal title bar.
+export PROMPT_COMMAND='printf "\033]0;%s at %s\007" "${USER}" "${HOSTNAME%%.*}"'
+
 # When resizing a terminal emulator, check the window size after each command
 # and, if necessary, update the values of LINES and COLUMNS. 
 shopt -s checkwinsize
 
 # Set colours
-#eval dircolors ${HOME}/.dir_colors/dircolors
 eval `dircolors`
 
 # Use `keychain` for ssh-agent management
@@ -147,7 +148,7 @@ fi
 # Examples: forward search in history; disable screen freeze in vim.
 stty -ixon
 
-# Bash completion
+# Bash completion.
 if [[ -f /etc/profile.d/bash_completion.sh ]]; then
     # shellcheck source=/dev/null
     . /etc/profile.d/bash_completion.sh
