@@ -34,7 +34,7 @@ PS1="${GREEN}\\u ${WHITE}at ${YELLOW}\h${RED}${ssh_message} ${WHITE}in ${BLUE}\\
 bak() { for f in "$@" ; do cp -- "$f" "$f.$(date +%FT%H%M%S).bak" ; done ; }
 
 # Change directories and list contents
-c() { cd -- "$@" && ls -aFlhNv --color=always ; }
+c() { cd -- "$@" && ls -aFlh --color=always ; }
 
 # Top 10 most used commands
 cmd10() { history | awk '{print $3}' | sort | uniq -c | sort -rn | head ; }
@@ -64,7 +64,7 @@ alias e="nvim"
 alias gpush="git push -u origin master"
 alias gsave="git commit -m 'save'"
 alias gs="git status"
-alias l="ls -aFlhNv --color=always"
+alias l="ls -aFlhv --color=always"
 alias lsmount="mount | column -t"
 alias myip="ip -f inet address | grep inet | grep -v 'lo$' | cut -d ' ' -f 6,13 && curl ifconfig.me && echo ' external ip'"
 alias p="less"
