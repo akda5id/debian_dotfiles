@@ -160,3 +160,5 @@ if [[ -f /usr/share/doc/pkgfile/command-not-found.bash ]]; then
     # shellcheck source=/dev/null
     . /usr/share/doc/pkgfile/command-not-found.bash
 fi
+# For Arch
+#source /usr/share/doc/pkgfile/command-not-found.bash
