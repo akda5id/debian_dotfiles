@@ -1,5 +1,7 @@
 .config/nvim/colors
 .config/nvim/plugged
 .config/nvim/spell
+.netrwhist
 *.bak
+*.ini
 _*
