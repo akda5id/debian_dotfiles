@@ -3,6 +3,10 @@ userresources=$HOME/.Xresources
 userbindkeys=$HOME/.xbindkeysrc
 usermodmap=$HOME/.Xmodmap
 
+# propagate DISPLAY and XAUTHORITY to dbus-daemon and, if present, systemd, 
+# and propagate DBUS_SESSION_BUS_ADDRESS to systemd
+dbus-update-activation-environment --systemd DBUS_SESSION_BUS_ADDRESS DISPLAY XAUTHORITY
+
 # config parameters for X client applications
 if [ -f $userresources ]; then
     xrdb -merge $userresources
