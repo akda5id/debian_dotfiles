@@ -10,24 +10,24 @@
     <action name="Execute"><execute>xfce4-terminal</execute></action>
 </item>
 <menu id="scrot-menu" label="Screenshots">
-<item label="Now">
+<item label="Window">
     <action name="Execute"><execute>
-        scrot -u '%Y-%m-%d_%H%M%S.png' -e 'mv $f ~/image/screenshot &amp; gthumb ~/image/screenshot/$f'
+        scrot -u '%Y-%m-%d_%H%M%S.png' -e 'mv $f ~/image/screenshot &amp; lximage-qt ~/image/screenshot/$f'
     </execute></action>
 </item>
-<item label="In 5 Seconds...">
+<item label="Window in 5 seconds...">
     <action name="Execute"><execute>
-        scrot -d 5 -u '%Y-%m-%d_%H%M%S.png' -e 'mv $f ~/image/screenshot &amp; gthumb ~/image/screenshot/$f'
+        scrot -d 5 -u '%Y-%m-%d_%H%M%S.png' -e 'mv $f ~/image/screenshot &amp; lximage-qt ~/image/screenshot/$f'
     </execute></action>
 </item>
-<item label="Selected Area...">
+<item label="Selected area...">
     <action name="Execute"><execute>
-        scrot -s '%Y-%m-%d_%H%M%S.png' -e 'mv $f ~/image/screenshot &amp; gthumb ~/image/screenshot/$f'
+        scrot -s '%Y-%m-%d_%H%M%S.png' -e 'mv $f ~/image/screenshot &amp; lximage-qt ~/image/screenshot/$f'
     </execute></action>
 </item>
 <item label="Desktop">
     <action name="Execute"><execute>
-        scrot '%Y-%m-%d_%H%M%S.png' -e 'mv $f ~/image/screenshot &amp; gthumb ~/image/screenshot/$f'
+        scrot '%Y-%m-%d_%H%M%S.png' -e 'mv $f ~/image/screenshot &amp; lximage-qt ~/image/screenshot/$f'
     </execute></action>
 </item>
 </menu>

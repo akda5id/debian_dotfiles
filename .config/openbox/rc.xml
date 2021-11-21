@@ -40,7 +40,7 @@
                   'Active' - where the active window is -->
   </placement>
   <theme>
-    <name>nord-openbox</name>
+    <name>Nordic-Openbox</name>
     <titleLayout>NLDIMC</titleLayout>
     <!--
       available characters are NDSLIMC, each can occur at most once.
@@ -53,23 +53,23 @@
       D: omnipresent (on all desktops).
   -->
     <keepBorder>yes</keepBorder>
-    <animateIconify>yes</animateIconify>
+    <animateIconify>no</animateIconify>
     <font place="ActiveWindow">
       <name>sans</name>
-      <size>8</size>
+      <size>9</size>
       <!-- font size in points -->
-      <weight>bold</weight>
+      <weight>Bold</weight>
       <!-- 'bold' or 'normal' -->
-      <slant>normal</slant>
+      <slant>Normal</slant>
       <!-- 'italic' or 'normal' -->
     </font>
     <font place="InactiveWindow">
       <name>sans</name>
-      <size>8</size>
+      <size>9</size>
       <!-- font size in points -->
-      <weight>bold</weight>
+      <weight>Bold</weight>
       <!-- 'bold' or 'normal' -->
-      <slant>normal</slant>
+      <slant>Normal</slant>
       <!-- 'italic' or 'normal' -->
     </font>
     <font place="MenuHeader">
@@ -197,7 +197,7 @@
         <to>4</to>
       </action>
     </keybind>
-        <keybind key="S-W-d">
+    <keybind key="W-d">
       <action name="ToggleShowDesktop"/>
     </keybind>
     <!-- Keybindings for windows -->
@@ -235,7 +235,7 @@
         <monitor>2</monitor>
       </action>
     </keybind>
-    <keybind key="W-Left">
+    <keybind key="S-W-Left">
       <action name="UnmaximizeFull"/>
       <action name="MoveResizeTo">
         <x>0</x>
@@ -244,7 +244,7 @@
         <height>100%</height>
       </action>
     </keybind>
-    <keybind key="W-Right">
+    <keybind key="S-W-Right">
       <action name="UnmaximizeFull"/>
       <action name="MoveResizeTo">
         <x>1/2</x>
@@ -256,7 +256,7 @@
     <keybind key="W-m">
       <action name="ToggleMaximize"/>
     </keybind>
-    <keybind key="W-d">
+    <keybind key="S-W-d">
       <action name="ToggleDecorations"/>
     </keybind>
     <keybind key="W-i">
@@ -307,17 +307,17 @@
       </action>
     </keybind>
     <!-- Keybindings for [l]ock screen, [s]uspend, [e]xit -->
-    <keybind key="S-W-l">
+    <keybind key="W-l">
       <action name="Execute">
         <command>i3lock -c 000000 -i ~/.i3lock.png</command>
       </action>
     </keybind>
-    <keybind key="S-W-s">
+    <keybind key="W-s">
       <action name="Execute">
         <command>sh -c 'i3lock -c 000000 -i ~/.i3lock.png; sync; systemctl suspend'</command>
       </action>
     </keybind>
-    <keybind key="S-W-e">
+    <keybind key="W-e">
       <action name="Exit">
         <prompt>no</prompt>
       </action>
@@ -790,14 +790,13 @@
       <maximized>false</maximized>
       <decor>yes</decor>
     </application>
-    <!-- Virtualbox (unable to get this app to obey rules) -->
     <!-- Viewnior -->
-    <application name="viewnior">
+    <application name="lximage-qt">
       <maximized>false</maximized>
       <decor>yes</decor>
     </application>
     <!-- Transmission -->
-    <application name="transmission-gtk">
+    <application name="transmission-qt">
       <desktop>4</desktop>
     </application>
   </applications>

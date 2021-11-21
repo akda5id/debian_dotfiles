@@ -18,7 +18,7 @@ dunst -config ~/.config/dunst/dunstrc &
 tint2 &
 
 # clipboard
-parcellite &
+diodon &
 
 # volume control
 (sleep 2; volumeicon) &
