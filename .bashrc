@@ -45,13 +45,6 @@ md() { mkdir -p -- "$@" && cd -- "$@" || return ; }
 # Replace spaces and non-ascii characters in a filename with underscore
 mtg() { for f in "$@" ; do mv -- "$f" "${f//[^a-zA-Z0-9\.\-]/_}" ; done ; }
 
-# (Un)mount usb devices
-mu() { sudo mountusb -m $1 ; }
-umu() { sudo mountusb -u $1 ; }
-# LUKS-encrypted usb device
-muc() { sudo cryptset -o $1 && sudo mountusb -m $1 ; }
-umuc() { sudo mountusb -u $1 && sudo cryptset -c $1 ; }
-
 # == Aliases ==
 
 alias aaa="deb_pkg_list ~/code/debian/pkg-list && sudo apt update && apt list --upgradable && sudo apt full-upgrade && sudo apt-get autoclean && sudo apt autoremove"
@@ -65,7 +58,7 @@ alias gpush="git push -u origin master"
 alias gsave="git commit -m 'save'"
 alias gs="git status"
 alias l="ls -aFlhv --color=always"
-alias lsmount="mount | column -t"
+alias mountt="mount | column -t"
 alias myip="ip -f inet address | grep inet | grep -v 'lo$' | cut -d ' ' -f 6,13 && curl ifconfig.me && echo ' external ip'"
 alias p="less"
 alias psg='ps aux | grep'
@@ -77,7 +70,6 @@ alias yta="youtube-dl --extract-audio --audio-format mp3 --audio-quality 0 --res
 alias zzz="systemctl suspend"
 
 if [[ -f ~/.bash_aliases ]]; then
-    # shellcheck source=/dev/null
     . ~/.bash_aliases
 fi
 
@@ -122,10 +114,6 @@ HISTCONTROL=ignorespace
 alias stophistory="set +o history"
 alias starthistory="set -o history"
 
-# Helpful!
-# https://superuser.com/q/575479
-# https://unix.stackexchange.com/q/1288
-
 # == Misc ==
 
 # PROMPT_COMMAND sets the terminal title bar.
@@ -150,15 +138,11 @@ stty -ixon
 
 # Bash completion.
 if [[ -f /etc/profile.d/bash_completion.sh ]]; then
-    # shellcheck source=/dev/null
     . /etc/profile.d/bash_completion.sh
 fi
 
 # Automatically search the official repositories when entering an unrecognized
 # command.
 if [[ -f /usr/share/doc/pkgfile/command-not-found.bash ]]; then
-    # shellcheck source=/dev/null
     . /usr/share/doc/pkgfile/command-not-found.bash
 fi
-# For Arch
-#source /usr/share/doc/pkgfile/command-not-found.bash
