@@ -47,7 +47,7 @@ mtg() { for f in "$@" ; do mv -- "$f" "${f//[^a-zA-Z0-9\.\-]/_}" ; done ; }
 
 # == Aliases ==
 
-alias aaa="deb_pkg_list ~/code/debian/pkg-list && sudo apt update && apt list --upgradable && sudo apt full-upgrade && sudo apt-get autoclean && sudo apt autoremove"
+alias aaa="sudo apt update && apt list --upgradable && sudo apt full-upgrade && sudo apt-get autoclean && sudo apt autoremove"
 alias arst="setxkbmap us"
 alias asdf="setxkbmap us -variant colemak"
 alias bye="sudo systemctl poweroff"
@@ -57,6 +57,8 @@ alias e="nvim"
 alias gpush="git push -u origin master"
 alias gsave="git commit -m 'save'"
 alias gs="git status"
+alias kg_5k="~/bin/keep_going.py -f 5k.json"
+alias kg_code="~/bin/keep_going.py -f xDaysOfCode.json"
 alias l="ls -aFlhv --color=always"
 alias mountt="mount | column -t"
 alias myip="ip -f inet address | grep inet | grep -v 'lo$' | cut -d ' ' -f 6,13 && curl ifconfig.me && echo ' external ip'"
