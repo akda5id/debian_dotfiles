@@ -1,3 +1,5 @@
+" Neovim configuration, by Daniel Wayne Armstrong hello@dwarmstrong.org
+"
 " == General configuration ==
 
 set nocompatible            " disable compatibility to old-time vi
@@ -9,8 +11,6 @@ set autoindent              " indent a new line the same amount as the line just
 set number                  " add line numbers
 set wildmode=longest,list   " get bash-like tab completions
 set cc=80                   " set colour columns for good coding style
-" python programming
-syntax on                   " syntax highlighting
 filetype plugin indent on   " allow auto-indenting depending on file type
 set tabstop=4               " number of columns occupied by a tab character
 set expandtab               " convert tabs to white space
@@ -19,6 +19,7 @@ set softtabstop=4           " see multiple spaces as tabstops so <BS> does the r
 
 " == Colors ==
 
+syntax on                   " syntax highlighting
 " built-in schemes installed in `/usr/share/nvim/runtime/colors`; extra schemes in `~/.config/nvim/colors`
 "colorscheme default     " `default` picks up colors defined in `~/.Xresources`
 colorscheme nord
@@ -31,13 +32,11 @@ colorscheme nord
 " map leader
 let g:mapleader = ','
 
-" toggle spelling
+" toggle spelling - when invoking an Ex command from a map, `<CR>` is added at the end
 nnoremap <leader>s :set invspell<CR>
-" when invoking an Ex command from a map, `<CR>` is added at the end
 
-" date+time stamp
+" datetime stamp
 inoremap <leader>d <C-R>=strftime("%Y-%m-%dT%H:%M")<CR>
-" `<C-R>=` is used to insert the result of an expression at the cursor
 
 " == Plugins ==
 
