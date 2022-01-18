@@ -1,9 +1,11 @@
+# detect if a second display is attached, make it the primary display,
+# and position it above the first display
+#~/bin/dldsply -r &
+~/bin/dual_display.py --above &
+
 # set background color (`hsetroot` plays nice with picom) and image
 hsetroot -solid "#000000"
-feh --bg-scale ~/image/backgrounds/current.jpg &
-
-# detect if secondary display attached and make it primary
-~/bin/dldsply -r &
+(sleep 2; feh --bg-scale ~/image/backgrounds/current.jpg) &
 
 # compositor
 picom &

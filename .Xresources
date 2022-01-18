@@ -42,6 +42,8 @@
 *.color7:       #e5e9f0
 *.color15:      #eceff4
 
+Xcursor.size: 12
+
 ! == Urxvt ==
 
 URxvt.scrollBar:    false
