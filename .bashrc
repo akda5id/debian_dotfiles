@@ -127,10 +127,10 @@ shopt -s checkwinsize
 eval `dircolors`
 
 # Use `keychain` for ssh-agent management
-#if [[ -x /usr/bin/keychain ]]; then
-#	keychain ~/.ssh/id_ed25519
-#	. "${HOME}/.keychain/${HOSTNAME}-sh"
-#fi
+if [[ -x /usr/bin/keychain ]]; then
+	keychain ~/.ssh/${HOSTNAME}
+	. "${HOME}/.keychain/${HOSTNAME}-sh"
+fi
 
 # Disable XON/XOFF flow control. Enables use of C-S in other commands.
 # Examples: forward search in history; disable screen freeze in vim.
