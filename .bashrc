@@ -47,12 +47,12 @@ mtg() { for f in "$@" ; do mv -- "$f" "${f//[^a-zA-Z0-9\.\-]/_}" ; done ; }
 
 # == Aliases ==
 
-alias aaa="sudo apt update && apt list --upgradable && sudo apt full-upgrade && sudo apt-get autoclean && sudo apt autoremove"
+alias aaa="sudo apt update && apt list --upgradable && sudo apt full-upgrade && sudo apt-get autoclean && sudo apt autoremove && pkg_list_deb"
+alias aptq="apt -qq --all-versions list"
 alias arst="setxkbmap us"
 alias asdf="setxkbmap us -variant colemak"
 alias bye="sudo systemctl poweroff"
 alias dff="df -hT --total"
-alias dpkgg="dpkg -l | grep -i"
 alias e="nvim"
 alias gpush="git push -u origin master"
 alias gsave="git commit -m 'save'"
@@ -66,7 +66,7 @@ alias reboot="sudo systemctl reboot"
 alias t="c ~/tmp"
 alias tmuxd="tmux new -s default -A"
 alias x="exit"
-alias yta="youtube-dl --extract-audio --audio-format mp3 --audio-quality 0 --restrict-filenames"
+alias yta="yt-dlp --extract-audio --audio-format mp3 --audio-quality 0 --restrict-filenames"
 alias zzz="systemctl suspend"
 
 if [[ -f ~/.bash_aliases ]]; then
