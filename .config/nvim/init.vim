@@ -35,6 +35,9 @@ let g:mapleader = ','
 " toggle spelling - when invoking an Ex command from a map, `<CR>` is added at the end
 nnoremap <leader>s :set invspell<CR>
 
+" insert file contents
+nnoremap <leader>day :read ~/.config/nvim/_misc/everyday.txt<CR>
+
 " datetime stamp
 inoremap <leader>d <C-R>=strftime("%Y-%m-%dT%H:%M")<CR>
 
