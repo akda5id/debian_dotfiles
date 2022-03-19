@@ -1,9 +1,0 @@
-[Desktop Entry]
-Name=termmax
-Type=Application
-Comment=Open terminal in maximized window
-Exec=/home/dwa/bin/termmax
-X-GNOME-Autostart-enabled=true
-X-GNOME-Autostart-Delay=0
-NoDisplay=false
-Hidden=false
