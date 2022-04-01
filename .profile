@@ -15,9 +15,5 @@ if [ -d "$HOME/.local/bin" ] ; then
     PATH="$HOME/.local/bin:$PATH"
 fi
 
-# Styling QT apps with chosen GTK themes:
-# * Adwaita themes - install 'adwaita-qt' package, then ...
-#	export QT_STYLE_OVERRIDE=Adwaita
-#	export QT_STYLE_OVERRIDE=Adwaita-Dark
-# * Non-adwaita themes - install 'qt5-style-plugins' package, then ...
+# Styling QT apps with chosen GTK themes. Install 'qt5-style-plugins', then ...
 export QT_QPA_PLATFORMTHEME=gtk2
