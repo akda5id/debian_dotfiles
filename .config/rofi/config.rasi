@@ -1,3 +1,1 @@
-configuration {
-theme: "/home/dwa/.config/rofi/dmenu-custom.rasi";
-}
+@theme "~/.config/rofi/dmenu-custom.rasi"
