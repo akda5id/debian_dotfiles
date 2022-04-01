@@ -235,7 +235,7 @@
         <monitor>2</monitor>
       </action>
     </keybind>
-    <keybind key="S-W-Left">
+    <keybind key="W-Left">
       <action name="UnmaximizeFull"/>
       <action name="MoveResizeTo">
         <x>0</x>
@@ -244,7 +244,7 @@
         <height>100%</height>
       </action>
     </keybind>
-    <keybind key="S-W-Right">
+    <keybind key="W-Right">
       <action name="UnmaximizeFull"/>
       <action name="MoveResizeTo">
         <x>1/2</x>
@@ -289,6 +289,11 @@
     <keybind key="W-space">
       <action name="Execute">
         <command>rofi -monitor primary -show run</command>
+      </action>
+    </keybind>
+    <keybind key="W-c">
+      <action name="Execute">
+        <command>rofi -monitor primary -modi "clipboard:greenclip print" -show clipboard -run-command '{cmd}'</command>
       </action>
     </keybind>
     <keybind key="W-r">
