@@ -47,22 +47,22 @@ mtg() { for f in "$@" ; do mv -- "$f" "${f//[^a-zA-Z0-9\.\-]/_}" ; done ; }
 
 # == Aliases ==
 
-alias aaa="sudo apt update && apt list --upgradable && sudo apt full-upgrade && sudo apt-get autoclean && sudo apt autoremove && deb_pkg_list"
+alias aaa="sudo apt update && apt list --upgradable && sudo apt full-upgrade && sudo apt-get autoclean && sudo apt autoremove && deb_pkglist"
 alias arst="setxkbmap us"
 alias asdf="setxkbmap us -variant colemak"
-alias bye="sudo systemctl poweroff"
+alias bye="systemctl poweroff"
 alias dff="df -hT --total"
 alias dpkgg="dpkg -l | grep"
 alias e="nvim"
-alias gpush="git push -u origin master"
 alias gsave="git commit -m 'save'"
 alias gs="git status"
 alias l="ls -aFlhv --color=always"
 alias mountt="mount | column -t"
 alias myip="ip -f inet address | grep inet | grep -v 'lo$' | cut -d ' ' -f 6,13 && curl ifconfig.me && echo ' external ip'"
 alias p="less"
+alias ppp="sudo pacman -Syu && arch_pkglist"
 alias psg='ps aux | grep'
-alias reboot="sudo systemctl reboot"
+alias reboot="systemctl reboot"
 alias t="c ~/tmp"
 alias tmuxd="tmux new -s default -A"
 alias x="exit"
