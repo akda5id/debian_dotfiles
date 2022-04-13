@@ -22,7 +22,7 @@ tint2 &
 greenclip daemon &
 
 # volume control
-(sleep 2; volumeicon) &
+(sleep 10; volumeicon) &
 
 # network manager
 nm-applet &
