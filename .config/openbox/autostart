@@ -6,6 +6,9 @@
 hsetroot -solid "#000000"
 (sleep 2; feh --bg-scale ~/image/backgrounds/current.jpg) &
 
+# thinkpad trackpoint (increase speed by making last num a smaller divisor)
+xinput set-prop 'TPPS/2 IBM TrackPoint' 'Coordinate Transformation Matrix' 1.0, 0, 0, 0, 1.0, 0, 0, 0, 0.2
+
 # compositor
 picom &
 
