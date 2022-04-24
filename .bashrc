@@ -34,7 +34,7 @@ PS1="${GREEN}\\u ${WHITE}at ${YELLOW}\h${RED}${ssh_message} ${WHITE}in ${BLUE}\\
 bak() { for f in "$@" ; do cp -- "$f" "$f.$(date +%FT%H%M%S).bak" ; done ; }
 
 # Change directories and list contents
-c() { cd -- "$@" && ls -aFlhv --color=always ; }
+c() { cd -- "$@" && ls -aFlh --color=always ; }
 
 # Top 10 most used commands
 cmd10() { history | awk '{print $3}' | sort | uniq -c | sort -rn | head ; }
@@ -56,7 +56,7 @@ alias dpkgg="dpkg -l | grep"
 alias e="nvim"
 alias gsave="git commit -m 'save'"
 alias gs="git status"
-alias l="ls -aFlhv --color=always"
+alias l="ls -aFlh --color=always"
 alias mnt="usbmount m"
 alias umnt="usbmount u"
 alias mountt="mount | column -t"
