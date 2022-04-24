@@ -1,6 +1,6 @@
 # detect if a second display is attached, make it the primary display,
 # and position it above the first display
-~/bin/dual_display.py --right &
+~/bin/dual_display --above &
 
 # set background color (`hsetroot` plays nice with picom) and image
 hsetroot -solid "#000000"
