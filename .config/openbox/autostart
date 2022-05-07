@@ -30,5 +30,8 @@ greenclip daemon &
 # network manager
 nm-applet &
 
+# media player controls
+playerctld daemon &
+
 # launch terminal
 xfce4-terminal &
