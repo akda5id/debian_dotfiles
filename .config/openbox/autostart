@@ -25,13 +25,10 @@ tint2 &
 greenclip daemon &
 
 # volume control
-(sleep 10; volumeicon) &
+(sleep 5; volumeicon) &
 
 # network manager
 nm-applet &
-
-# media player controls
-playerctld daemon &
 
 # launch terminal
 xfce4-terminal &
