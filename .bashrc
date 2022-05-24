@@ -1,13 +1,13 @@
 # ~/.bashrc - If not running interactively, don't do anything
 case $- in
-    *i*) ;;
-      *) return;;
+  *i*) ;;
+  *) return;;
 esac
 
 # == Greeting ==
 
 if [[ -x "${HOME}/.local/bin/fortune" ]]; then
-    ${HOME}/.local/bin/fortune ${HOME}/.fortunes
+  ${HOME}/.local/bin/fortune ${HOME}/.fortunes
 fi
 
 # == Prompt ==
@@ -24,9 +24,9 @@ RESET="\\[\\e[0m\\]"
 
 # Set a two-line prompt; if accessing via ssh include 'ssh-session' message
 if [[ -n "$SSH_CLIENT" ]]; then
-    ssh_message="-ssh_session"
+  ssh_message="-ssh_session"
 fi
-PS1="${GREEN}\\u ${WHITE}at ${YELLOW}\h${RED}${ssh_message} ${WHITE}in ${BLUE}\\w \\n$WHITE\$${RESET} "
+PS1="${CYAN}\t ${GREEN}\u ${WHITE}at ${YELLOW}\h${RED}${ssh_message} ${WHITE}in ${BLUE}\w \n$WHITE\$${RESET} "
 
 # == Functions ==
 
@@ -47,11 +47,10 @@ mtg() { for f in "$@" ; do mv -- "$f" "${f//[^a-zA-Z0-9\.\-]/_}" ; done ; }
 
 # == Aliases ==
 
-alias aaa="sudo apt update && apt list --upgradable && sudo apt full-upgrade && sudo apt-get autoclean && sudo apt autoremove && deb_pkglist"
 alias arst="setxkbmap us"
 alias asdf="setxkbmap us -variant colemak"
 alias bye="systemctl poweroff"
-alias dff="df -hT --total"
+alias dff="sudo df -hT --total"
 alias dpkgg="dpkg -l | grep"
 alias e="nvim"
 alias gsave="git commit -m 'save'"
@@ -71,7 +70,7 @@ alias yta="yt-dlp --extract-audio --audio-format mp3 --audio-quality 0 --restric
 alias zzz="systemctl suspend"
 
 if [[ -f ~/.bash_aliases ]]; then
-    . ~/.bash_aliases
+  . ~/.bash_aliases
 fi
 
 # == History ==
@@ -129,8 +128,8 @@ eval `dircolors`
 
 # Use `keychain` for ssh-agent management
 if [[ -x /usr/bin/keychain ]]; then
-	keychain ~/.ssh/${HOSTNAME}
-	. "${HOME}/.keychain/${HOSTNAME}-sh"
+  keychain ~/.ssh/${HOSTNAME}
+  . "${HOME}/.keychain/${HOSTNAME}-sh"
 fi
 
 # Disable XON/XOFF flow control. Enables use of C-S in other commands.
@@ -139,11 +138,5 @@ stty -ixon
 
 # Bash completion.
 if [[ -f /etc/profile.d/bash_completion.sh ]]; then
-    . /etc/profile.d/bash_completion.sh
-fi
-
-# Automatically search the official repositories when entering an unrecognized
-# command.
-if [[ -f /usr/share/doc/pkgfile/command-not-found.bash ]]; then
-    . /usr/share/doc/pkgfile/command-not-found.bash
+  . /etc/profile.d/bash_completion.sh
 fi
