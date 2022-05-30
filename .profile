@@ -15,5 +15,10 @@ if [ -d "$HOME/.local/bin" ] ; then
     PATH="$HOME/.local/bin:$PATH"
 fi
 
+# Add homebrew package manager to PATH
+if [ -d "/home/linuxbrew/.linuxbrew/bin" ] ; then
+    eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
+fi
+
 # Styling QT apps with chosen GTK themes. Install 'qt5-style-plugins', then ...
 export QT_QPA_PLATFORMTHEME=gtk2
