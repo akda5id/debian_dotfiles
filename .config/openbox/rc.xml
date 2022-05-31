@@ -288,7 +288,7 @@
     <!-- Keybindings to launch applications -->
     <keybind key="A-x">
       <action name="Execute">
-        <command>rofi -monitor primary -show run</command>
+        <command>rofi -show run</command>
       </action>
     </keybind>
     <keybind key="W-c">

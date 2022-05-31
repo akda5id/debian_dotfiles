@@ -8,4 +8,4 @@ Originally by [Daniel Wayne Armstrong](https://www.dwarmstrong.org) at [gitlab](
 
 ## LICENSE
 
-GPLv3. See [LICENSE](https://gitlab.com/dwarmstrong/dotfiles/-/blob/master/LICENSE.md) for more details.
+GPLv3. See [LICENSE](blob/master/LICENSE.md) for more details.
