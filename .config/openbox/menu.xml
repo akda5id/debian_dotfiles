@@ -45,6 +45,44 @@
   <item label="Restart">
     <action name="Restart" />
   </item>
+  <menu id="res-menu" label="Resolution">
+        <separator label="Resolution"/>
+  <item label="1920x1080">
+            <action name="Execute">
+                <execute>
+                    xrandr -s 1920x1080
+                </execute>
+            </action>
+        </item>
+        <item label="1280x1024">
+            <action name="Execute">
+                <execute>
+                    xrandr -s 1280x1024
+                </execute>
+            </action>
+        </item>
+  <item label="1280x720">
+            <action name="Execute">
+                <execute>
+                    xrandr -s 1280x720
+                </execute>
+            </action>
+        </item>
+        <item label="1024x768">
+            <action name="Execute">
+                <execute>
+                    xrandr -s 1024x768
+                </execute>
+            </action>
+        </item>
+        <item label="800x600">
+            <action name="Execute">
+                <execute>
+                    xrandr -s 800x600
+                </execute>
+            </action>
+        </item>
+</menu>
   <separator />
   <item label="Exit">
     <action name="Exit" />

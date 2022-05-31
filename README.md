@@ -1,10 +1,10 @@
 # dotfiles
 
-Configuration files in my **$HOME**.
+Configuration files for a minimal debian gui. 
 
 ## AUTHOR
 
-[Daniel Wayne Armstrong](https://www.dwarmstrong.org)
+Originally by [Daniel Wayne Armstrong](https://www.dwarmstrong.org) at [gitlab](https://gitlab.com/dwarmstrong/dotfiles)
 
 ## LICENSE
 

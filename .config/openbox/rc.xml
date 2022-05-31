@@ -256,7 +256,7 @@
     <keybind key="W-m">
       <action name="ToggleMaximize"/>
     </keybind>
-    <keybind key="S-W-d">
+    <keybind key="A-d">
       <action name="ToggleDecorations"/>
     </keybind>
     <keybind key="W-i">
@@ -286,7 +286,7 @@
       </action>
     </keybind>
     <!-- Keybindings to launch applications -->
-    <keybind key="W-space">
+    <keybind key="A-x">
       <action name="Execute">
         <command>rofi -monitor primary -show run</command>
       </action>
@@ -296,7 +296,7 @@
         <command>rofi -monitor primary -modi "clipboard:greenclip print" -show clipboard -run-command '{cmd}'</command>
       </action>
     </keybind>
-    <keybind key="W-r">
+    <keybind key="A-r">
       <action name="ShowMenu">
         <menu>root-menu</menu>
       </action>

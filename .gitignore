@@ -5,3 +5,4 @@
 *.bak
 *.ini
 _*
+/.DS_Store
