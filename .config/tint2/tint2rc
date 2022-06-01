@@ -99,7 +99,7 @@ border_color_pressed = #000000 0
 #===============================================
 
 # Panel
-panel_items = TSBC
+panel_items = LTSC
 panel_size = 100% 26
 panel_margin = 0 0
 panel_padding = 0 0 0
@@ -185,7 +185,7 @@ systray_icon_asb = 100 0 30
 systray_monitor = 1
 
 # Clock
-time1_format = %j:%d:%H:%M
+time1_format = %H:%M
 time2_format = 
 time1_font = Ubuntu Condensed Bold 12
 time1_timezone = 
@@ -234,5 +234,13 @@ mouse_middle = none
 mouse_right = none
 mouse_scroll_up = toggle
 mouse_scroll_down = iconify
+
+# Launchers
+launcher_icon_theme = LinuxLex-8
+launcher_padding = 5 0 10
+launcher_background_id = 8
+launcher_icon_size = 15
+launcher_item_app = /usr/share/applications/google-chrome.desktop
+launcher_item_app = /usr/share/applications/gentoo.desktop
 
 # End of config

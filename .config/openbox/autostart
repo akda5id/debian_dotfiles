@@ -1,18 +1,18 @@
 
 # set background color (`hsetroot` plays nice with picom) and image
-#hsetroot -solid "#000000" &
+hsetroot -solid "#808080" &
 
 # input device settings
 #~/bin/xinput_set &
 
 # compositor
-#picom &
+picom &
 
 # power management
 #xfce4-power-manager &
 
 # notifications
-#dunst -config ~/.config/dunst/dunstrc &
+dunst -config ~/.config/dunst/dunstrc &
 
 # panel - taskbar, system tray, battery, clock
 tint2 &
