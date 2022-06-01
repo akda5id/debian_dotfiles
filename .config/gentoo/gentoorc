@@ -362,7 +362,7 @@
    <CmdRows>
     <CmdRow>
      <type>"External"</type>
-     <def>"eog {Fup}"</def>
+     <def>"feh {Fup}"</def>
      <flags>0</flags>
      <CX_External>
       <gflags>0</gflags>
