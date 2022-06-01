@@ -1,22 +1,18 @@
-# detect if a second display is attached, make it the primary display,
-# and position it above the first display
-~/bin/dual_display --above &
 
 # set background color (`hsetroot` plays nice with picom) and image
-hsetroot -solid "#000000"
-(sleep 2; feh --bg-scale ~/image/backgrounds/current.jpg) &
+#hsetroot -solid "#000000" &
 
 # input device settings
-~/bin/xinput_set &
+#~/bin/xinput_set &
 
 # compositor
-picom &
+#picom &
 
 # power management
-xfce4-power-manager &
+#xfce4-power-manager &
 
 # notifications
-dunst -config ~/.config/dunst/dunstrc &
+#dunst -config ~/.config/dunst/dunstrc &
 
 # panel - taskbar, system tray, battery, clock
 tint2 &
@@ -25,10 +21,10 @@ tint2 &
 greenclip daemon &
 
 # volume control
-(sleep 5; volumeicon) &
+#(sleep 5; volumeicon) &
 
 # network manager
-nm-applet &
+#nm-applet &
 
 # launch terminal
-xfce4-terminal &
+#xfce4-terminal &

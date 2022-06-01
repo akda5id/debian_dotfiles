@@ -26,17 +26,17 @@ fi
 xset b off
 
 # set keyboard layout to colemak
-setxkbmap -model pc104 -layout us -variant colemak
+# setxkbmap -model pc104 -layout us -variant colemak
 
 # configure trackpoint
-if command -v $(xinput list | grep 'TrackPoint' &> /dev/null); then
-    xinput set-prop "TPPS/2 IBM TrackPoint" "libinput Accel Speed" 1.0
-fi
+# if command -v $(xinput list | grep 'TrackPoint' &> /dev/null); then
+#     xinput set-prop "TPPS/2 IBM TrackPoint" "libinput Accel Speed" 1.0
+# fi
 
 # janitor
-if [ -d ~/.local/share/Trash ]; then
-	rm -rf ~/.local/share/Trash/*
-fi
+# if [ -d ~/.local/share/Trash ]; then
+# 	rm -rf ~/.local/share/Trash/*
+# fi
 
 # start window manager
 exec openbox-session
