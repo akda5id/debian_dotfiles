@@ -787,8 +787,8 @@
     <!-- Match all normal windows and maximize + remove decorations when
          launched. Leave things like dialog windows or panels untouched -->
     <application type="normal">
-      <maximized>true</maximized>
-      <decor>no</decor>
+      <maximized>false</maximized>
+      <decor>yes</decor>
     </application>
     <!-- VLC -->
     <application class="vlc">
@@ -796,8 +796,8 @@
       <decor>yes</decor>
     </application>
     <!-- vnchelper -->
-    <application name="vnc-config">
-      <maximized>false</maximized>
+    <application class="Vncconfig">
+      <maximized>true</maximized>
       <decor>yes</decor>
     </application>
     <!-- vnchelper -->
@@ -805,14 +805,15 @@
       <maximized>false</maximized>
       <decor>yes</decor>
     </application>
+    <!-- vnchelper -->
+    <application name="xvkbd">
+      <maximized>false</maximized>
+      <decor>yes</decor>
+    </application>
     <!-- Viewnior -->
     <application name="lximage-qt">
       <maximized>false</maximized>
       <decor>yes</decor>
-    </application>
-    <!-- Transmission -->
-    <application name="transmission-gtk">
-      <desktop>4</desktop>
     </application>
   </applications>
 </openbox_config>
